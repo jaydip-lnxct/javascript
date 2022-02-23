@@ -1,24 +1,18 @@
-import React from 'react';
+// import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import Menu from './components/menu';
 
-const Name=()=>{
-  return(
-    <ul style={{textAlign:'center'}}>
-      <h1 style={{color: "red"}}>Items</h1>
-      <li>1.Pizza</li>
-      <li>2.Manchurian</li>
-      <li>3.Dosa</li>
-      <li>4.Gujarati Dish</li>
-      <li>5.Pau Bhaji</li>
-    </ul>
-  )
+const Camera=()=>{
+const shot=()=>{
+    alert("plz try Agian because your face is not good!!")
 }
-
-
-
-
-ReactDOM.render(<Name/>, document.getElementById('root')
+return(
+    <button className="center" onClick={shot}>take a shot plz smile</button>
+)
+}
+ReactDOM.render(<Menu className='crossed-line'/>, document.getElementById('root'));
+ReactDOM.render(<Camera />, document.getElementById('shot')
 );
 
 // If you want to start measuring performance in your app, pass a function

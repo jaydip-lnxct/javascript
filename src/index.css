@@ -14,3 +14,14 @@ code {
 ul{
   list-style: none;
 }
+.crossed-line {
+  text-decoration: line-through;
+}
+.center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border:1px solid indianred;
+  margin: auto;
+}
